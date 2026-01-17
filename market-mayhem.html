@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Mayhem | Daan Oostwouder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/MarketMayhemGameplay2.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: var(--nav-height);
+        }
+
+        .project-content {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Global Plant Background -->
+    <div class="hero-bg global-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">DAAN<span class="accent-dot">.</span>DEV</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <h1>Market Mayhem</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary);">Co-op • Simulation</p>
+        </div>
+    </header>
+
+    <section class="project-content container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+        <div class="about-text">
+            <h2>About the Game</h2>
+            <p>Market Mayhem is a cozy yet frantic co-op game where coordination is key. Players must work together to
+                deliver fresh fruits from a delivery truck to various market stalls in a bustling town square.</p>
+
+            <p>Racing against a strict time limit, players need to manage inventory, navigate obstacles, and ensure
+                every stall gets their daily produce.</p>
+
+            <h3 style="margin-top: 2rem; color: var(--text-primary);">Technical Contributions</h3>
+            <ul style="list-style: none; color: var(--text-secondary); margin-top: 1rem;">
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i>Developed smooth player movement
+                    and character animation logic</li>
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i>Created the central delivery
+                    system logic using state machines</li>
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i>Built the UI for timers and
+                    scoring feedback loops</li>
+            </ul>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="https://bananagames24.itch.io/market-mayhem" target="_blank" class="btn btn-primary"><i
+                        class="fas fa-gamepad" style="margin-right: 10px;"></i>Play on Itch.io</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Daan Oostwouder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

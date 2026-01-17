@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruins TD 3D | Daan Oostwouder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/RuinsTD3DGameplay2.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: var(--nav-height);
+        }
+
+        .project-content {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Global Plant Background -->
+    <div class="hero-bg global-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">DAAN<span class="accent-dot">.</span>DEV</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <h1>Ruins TD 3D</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary);">3D Tower Defense • Strategy</p>
+        </div>
+    </header>
+
+    <section class="project-content container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+        <div class="about-text">
+            <h2>About the Game</h2>
+            <p>Ruins TD 3D is a strategic tower defense game developed entirely as a solo project. The goal is to defend
+                a medieval kingdom against waves of black market traders trying to smuggle goods.</p>
+
+            <p>You must place stone towers strategically along the path to intercept enemies. As the waves get stronger,
+                your strategy must evolve to hold the line.</p>
+
+            <h3 style="margin-top: 2rem; color: var(--text-primary);">Technical Contributions</h3>
+            <ul style="list-style: none; color: var(--text-secondary); margin-top: 1rem;">
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i><b>Solo Project:</b> Responsible
+                    for all code, design, and implementation</li>
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i>Programmed enemy pathfinding and
+                    wave spawning systems</li>
+                <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
+                        style="color: var(--accent-primary); margin-right: 10px;"></i>Built complex tower targeting and
+                    upgrade logic</li>
+            </ul>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="https://bananagames24.itch.io/ruins-3d-td" target="_blank" class="btn btn-primary"><i
+                        class="fas fa-gamepad" style="margin-right: 10px;"></i>Play on Itch.io</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Daan Oostwouder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

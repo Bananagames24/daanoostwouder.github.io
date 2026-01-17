@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daan Oostwouder | Game Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Daan Oostwouder, a game developer specializing in Unity and C#.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span class="accent-dot"></span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content" data-aos="fade-up">
+            <span class="tagline">Game Developer</span>
+            <h1>Daan <span class="gradient-text">Oostwouder</span></h1>
+            <p>A Unity & C# developer passionate about creating immersive gameplay experiences.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Quest Log</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1: Fish-Tick -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100"
+                    onclick="window.location.href='fish-tick.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="images/FishTickGameplay.gif" alt="Fish-Tick Gameplay">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">2D Multiplayer • Mobile</div>
+                        <h3>Fish-Tick</h3>
+                        <p>A chaotic 2-player local multiplayer fishing game. Originally designed for touch tables, now
+                            optimized for mobile.</p>
+                        <div class="tech-stack">
+                            <span>Unity</span><span>C#</span><span>UI/UX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: WA-LCH -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200"
+                    onclick="window.location.href='wa-lch.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="images/WalchGameplay4.gif" alt="WA-LCH Gameplay">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">3D Top-Down • Adventure</div>
+                        <h3>WA-LCH</h3>
+                        <p>Play as a cleaning bot in an underground lab. Restore power by reactivating generators while
+                            fighting off threats.</p>
+                        <div class="tech-stack">
+                            <span>NavMesh</span><span>Level Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Market Mayhem -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300"
+                    onclick="window.location.href='market-mayhem.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="images/MarketMayhemGameplay2.gif" alt="Market Mayhem Gameplay">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">Co-op • Simulation</div>
+                        <h3>Market Mayhem</h3>
+                        <p>A cozy yet frantic co-op game. Deliver fruits from a truck to market stalls before time runs
+                            out.</p>
+                        <div class="tech-stack">
+                            <span>Movement</span><span>Animation</span><span>Systems</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Ruins TD 3D -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="400"
+                    onclick="window.location.href='ruins-td.html'" style="cursor: pointer;">
+                    <div class="card-image">
+                        <img src="images/RuinsTD3DGameplay2.gif" alt="Ruins TD 3D Gameplay">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">3D Tower Defense • Strategy</div>
+                        <h3>Ruins TD 3D</h3>
+                        <p>Solo project. Defend the kingdom against black market traders in this strategic 3D tower
+                            defense game.</p>
+                        <div class="tech-stack">
+                            <span>Solo Dev</span><span>Pathfinding</span><span>Waves</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Profile</span>
+                <h2>About The Developer</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/profile.png" alt="Daan Oostwouder">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p class="highlight">Hello! I'm Daan, a student at Grafisch Lyceum Utrecht (GLU).</p>
+                    <p>My journey in game development is driven by a passion for coding, gaming, and understanding
+                        computer hardware. I thrive on tackling technical challenges and learning new technologies to
+                        bring creative ideas to life.</p>
+                    <p>When I'm not coding, you can find me gaming or taking care of my collection of plants. 🌱</p>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <h3>Student</h3>
+                        <p>Grafisch Lyceum Utrecht</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Language</h3>
+                        <p>Dutch & English</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Focus</h3>
+                        <p>Unity & C#</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Inventory</span>
+                <h2>Technical Arsenal</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-unity"></i>
+                    <h3>Unity</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-code"></i>
+                    <h3>C#</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <!-- Added soft skills/tools to fill grid nicely -->
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-cubes"></i>
+                    <h3>3D Concepts</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fas fa-file-code"></i>
+                    <h3>JSON</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-left" data-aos="fade-right">
+                <h2>Let's Build Something Awesome</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    visions.</p>
+                <a href="mailto:daan.oostwouder2@gmail.com" class="email-link">daan.oostwouder2@gmail.com</a>
+            </div>
+            <div class="footer-right" data-aos="fade-left">
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/daan-oostwouder/" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Bananagames24" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Daan Oostwouder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
