@@ -34,12 +34,12 @@ window.addEventListener('click', (e) => {
 const links = document.querySelectorAll('a, button, .project-card, .btn');
 links.forEach(link => {
     link.addEventListener('mouseenter', () => {
-        cursorDot.style.width = '60px';
-        cursorDot.style.height = '60px';
+        cursorDot.style.width = '30px';
+        cursorDot.style.height = '30px';
     });
     link.addEventListener('mouseleave', () => {
-        cursorDot.style.width = '20px';
-        cursorDot.style.height = '20px';
+        cursorDot.style.width = '10px';
+        cursorDot.style.height = '10px';
     });
 });
 
@@ -77,3 +77,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Secret Easter Egg Trigger
+let logoClicks = 0;
+let lastClickTime = 0;
+const logo = document.querySelector('.logo');
+
+if (logo) {
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        const now = Date.now();
+        if (now - lastClickTime < 600) {
+            logoClicks++;
+        } else {
+            logoClicks = 1;
+        }
+        lastClickTime = now;
+
+        if (logoClicks >= 5) {
+            window.location.href = 'secret.html';
+        }
+    });
+}
