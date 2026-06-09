@@ -765,3 +765,56 @@ h2 {
         transform: translateY(-7px) rotate(-45deg);
     }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 5px;
+    border: 2px solid var(--bg-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #FFEB3B; /* Yellow banana color accent! */
+}
+
+/* Selection Highlight */
+::selection {
+    background-color: #FFEB3B; /* Yellow banana selection */
+    color: var(--bg-color);
+}
+
+/* Skill description style replacing progress bar */
+.skill-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: auto; /* keeps it pushed to the bottom of the card */
+}
+
+/* Tech Challenge and Buttons for Project Cards */
+.tech-challenge {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 2px solid var(--accent-primary);
+    border-radius: 0 4px 4px 0;
+    line-height: 1.4;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
